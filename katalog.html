@@ -1,0 +1,426 @@
+<meta charset="utf-8">
+<title>Каталог Longrich 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff; --ground:#f6f7f5; --ink:#15211e; --ink-2:#5d6b67;
+  --teal:#0a6f62; --teal-d:#064a41; --teal-l:#e4f0ed;
+  --line:#dde4e1; --amber:#a86a12; --amber-bg:#fdf5e7;
+  --r:14px; --shadow:0 1px 2px rgba(10,50,42,.05),0 10px 28px rgba(10,50,42,.07);
+  --max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:'Golos Text',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit}
+h1,h2,h3{margin:0;line-height:1.18;letter-spacing:-.022em;font-weight:800;text-wrap:balance}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:20px}
+.num{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+
+/* header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(246,247,245,.92);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.03em;flex-shrink:0}
+.mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(145deg,#0f9080,var(--teal-d));color:#fff;display:grid;place-items:center;font-size:16px}
+.brand small{display:block;font-size:10.5px;font-weight:600;color:var(--ink-2);letter-spacing:.09em;text-transform:uppercase;line-height:1}
+.menu{display:flex;gap:2px;margin-left:auto;align-items:center}
+.menu a{padding:8px 13px;border-radius:999px;font-weight:600;font-size:14.5px;color:var(--ink-2)}
+.menu a:hover{background:var(--teal-l);color:var(--teal-d)}
+.burger{display:none;margin-left:auto;background:var(--paper);border:1px solid var(--line);border-radius:11px;width:42px;height:42px;font-size:17px}
+@media(max-width:880px){
+  .burger{display:grid;place-items:center}
+  .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 16px 16px;box-shadow:var(--shadow)}
+  .menu[hidden]{display:none}
+  .menu a{padding:12px 14px;border-radius:11px}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 23px;border-radius:999px;border:1.5px solid transparent;font-weight:700;font-size:15px;transition:background .15s,transform .1s}
+.btn:active{transform:translateY(1px)}
+.btn-p{background:var(--teal);color:#fff}
+.btn-p:hover{background:var(--teal-d)}
+.btn-g{background:transparent;color:var(--teal-d);border-color:var(--teal)}
+.btn-g:hover{background:var(--teal-l)}
+
+/* hero */
+.hero{background:linear-gradient(158deg,#063b33,#0a6f62 58%,#12907f);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(820px 380px at 82% 12%,rgba(255,255,255,.13),transparent 62%)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.06fr .94fr;gap:46px;align-items:center;padding-block:62px 70px}
+.hero h1{font-size:clamp(30px,4.6vw,50px);color:#fff;margin-bottom:16px;font-weight:900}
+.hero p{color:rgba(255,255,255,.84);font-size:clamp(16px,1.5vw,18.5px);max-width:50ch;margin:0 0 26px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-g{color:#fff;border-color:rgba(255,255,255,.46)}
+.hero .btn-g:hover{background:rgba(255,255,255,.12)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.24);padding:7px 15px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:20px}
+.hero-pic{border-radius:20px;overflow:hidden;box-shadow:0 26px 64px rgba(0,0,0,.32)}
+.stats{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.stats b{display:block;font-size:27px;color:#fff;line-height:1.1;font-weight:800}
+.stats span{font-size:12.5px;color:rgba(255,255,255,.7)}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;padding-block:44px 52px;gap:30px}.hero-pic{order:-1}}
+
+/* sections */
+.sec{padding-block:66px}
+.sec-paper{background:var(--paper)}
+.head{max-width:640px;margin-bottom:34px}
+.kick{color:var(--amber);font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:9px}
+.head h2{font-size:clamp(25px,3.2vw,36px);margin-bottom:11px}
+.head p{color:var(--ink-2);font-size:16.5px;margin:0}
+
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(224px,1fr));gap:26px}
+.feat h3{font-size:16.5px;margin-bottom:7px}
+.feat p{color:var(--ink-2);font-size:14.5px;margin:0}
+.feat .i{font-size:24px;margin-bottom:11px}
+
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(256px,1fr));gap:16px}
+.cat{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;text-align:left;width:100%;transition:transform .15s,box-shadow .15s,border-color .15s}
+.cat:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--teal)}
+.sec-paper .cat{background:var(--ground)}
+.cat .i{width:44px;height:44px;border-radius:13px;background:var(--teal-l);display:grid;place-items:center;font-size:20px;margin-bottom:14px}
+.cat h3{font-size:18px;margin-bottom:7px}
+.cat p{color:var(--ink-2);font-size:14px;margin:0 0 12px}
+.cat .n{font-size:12.5px;font-weight:700;color:var(--teal-d)}
+
+/* catalog */
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.srch{position:relative;flex:1 1 270px;max-width:420px}
+.srch input{width:100%;padding:13px 16px 13px 42px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:15px;color:var(--ink)}
+.srch input::placeholder{color:#93a09c}
+.srch span{position:absolute;left:15px;top:50%;transform:translateY(-50%);font-size:15px;opacity:.5}
+.cnt{color:var(--ink-2);font-size:14px;font-weight:600;margin-left:auto}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-weight:700;font-size:13.5px;color:var(--ink-2);white-space:nowrap;transition:all .14s}
+.chip:hover{border-color:var(--teal);color:var(--teal-d)}
+.chip[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:#fff}
+
+.grp{display:flex;align-items:baseline;gap:12px;margin:38px 0 18px;padding-bottom:11px;border-bottom:2px solid var(--line)}
+.grp h3{font-size:22px}
+.grp span{color:var(--ink-2);font-size:13.5px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0;transition:transform .15s,box-shadow .15s,border-color .15s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--teal)}
+.pic{position:relative;aspect-ratio:1;max-width:100%;background:#f1f3f1;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover}
+.pic img.fit{object-fit:contain;object-position:top center;background:#fff}
+.tagmark{position:absolute;top:9px;left:9px;z-index:2;background:var(--teal);color:#fff;font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px;letter-spacing:.05em;text-transform:uppercase}
+.tagmark.g{background:var(--amber)}
+.cbody{padding:15px 15px 17px;display:flex;flex-direction:column;flex:1;gap:6px}
+.cbody h4{margin:0;font-size:15px;font-weight:700;line-height:1.34}
+.sz{font-size:12.5px;color:var(--ink-2)}
+.pr{margin-top:auto;padding-top:9px;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.p1{font-size:18.5px;font-weight:800;color:var(--teal-d)}
+.p2{font-size:12px;color:var(--amber);font-weight:700}
+.p0{font-size:13.5px;color:var(--ink-2);font-weight:600}
+.more{font-size:12.5px;font-weight:700;color:var(--teal);margin-top:3px}
+.none{text-align:center;padding:64px 20px;color:var(--ink-2)}
+.none b{display:block;font-size:18px;color:var(--ink);margin-bottom:5px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:20px;counter-reset:s}
+.step{background:var(--ground);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--teal);color:#fff;font-weight:800;font-size:16px;margin-bottom:13px;font-family:'IBM Plex Mono',monospace}
+.step h3{font-size:16.5px;margin-bottom:6px}
+.step p{color:var(--ink-2);font-size:14.5px;margin:0}
+
+.note{background:var(--amber-bg);border:1px solid #efddbd;border-radius:13px;padding:15px 19px;font-size:14px;color:var(--amber);margin-top:30px}
+.note b{color:#7c4e06}
+
+.band{background:linear-gradient(145deg,#063b33,#12907f);border-radius:24px;padding:46px 40px;color:#fff;text-align:center}
+.band h2{font-size:clamp(23px,3vw,32px);margin-bottom:11px}
+.band p{color:rgba(255,255,255,.84);max-width:52ch;margin:0 auto 24px;font-size:16.5px}
+.band .btn-p{background:#fff;color:var(--teal-d)}
+.band .btn-p:hover{background:#d9efe9}
+.band .btn-g{color:#fff;border-color:rgba(255,255,255,.5)}
+@media(max-width:620px){.band{padding:34px 22px}}
+
+/* footer */
+.ftr{background:#063b33;color:rgba(255,255,255,.74);padding-block:48px 24px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:34px;padding-bottom:30px}
+.ftr h4{color:#fff;font-size:13px;letter-spacing:.09em;text-transform:uppercase;margin:0 0 14px;font-weight:700}
+.ftr a{display:block;padding:5px 0;font-size:14.5px}
+.ftr a:hover{color:#fff}
+.ftr p{font-size:14.5px;margin:0 0 9px;max-width:42ch}
+.fb{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:18px;margin-bottom:12px}
+.fbot{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:26px}}
+
+/* modal */
+.mbg{position:fixed;inset:0;z-index:100;background:rgba(6,32,27,.58);backdrop-filter:blur(3px);padding:18px;overflow-y:auto}
+.mbg[hidden]{display:none!important}
+.modal{background:var(--paper);max-width:900px;margin:36px auto;border-radius:22px;overflow:hidden;box-shadow:0 36px 84px rgba(0,0,0,.36);position:relative}
+.mx{position:absolute;top:13px;right:13px;z-index:5;width:40px;height:40px;border-radius:50%;border:none;background:rgba(255,255,255,.94);box-shadow:var(--shadow);font-size:19px;line-height:1}
+.mgrid{display:grid;grid-template-columns:minmax(0,410px) minmax(0,1fr)}
+.mpic{background:#f1f3f1;display:grid;place-items:center}
+.mpic img{width:100%;height:100%;max-height:560px;object-fit:contain;background:#fff}
+.mbody{padding:32px 32px 36px;max-height:min(78vh,760px);overflow-y:auto}
+.mbody h2{font-size:24px;margin-bottom:7px;padding-right:34px}
+.msz{color:var(--ink-2);font-size:14.5px;margin-bottom:16px}
+.mpr{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap;background:var(--teal-l);border-radius:13px;padding:15px 17px;margin-bottom:20px}
+.mpr .p1{font-size:27px}
+.mpr .p2{font-size:13.5px}
+.mbody h5{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin:22px 0 9px;font-weight:800}
+.mbody p{margin:0 0 11px;color:var(--ink-2);font-size:15px}
+.mbody p.lead{color:var(--ink);font-size:16px}
+.mbody ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.mbody li{position:relative;padding-left:25px;font-size:14.5px;color:var(--ink-2)}
+.mbody li::before{content:'';position:absolute;left:0;top:.56em;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}
+.tg{background:var(--amber-bg);color:var(--amber);font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px}
+.warn{background:var(--amber-bg);border:1px solid #efddbd;border-radius:11px;padding:13px 15px;font-size:13.5px;color:var(--amber);margin-top:18px}
+.calm{background:#f2f4f2;border-color:var(--line);color:var(--ink-2)}
+@media(max-width:760px){.mgrid{grid-template-columns:1fr}.mpic img{max-height:300px}.mbody{padding:22px 20px 28px;max-height:none}.modal{margin:14px auto}}
+
+.up{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;width:46px;height:46px;border-radius:50%;background:var(--teal);color:#fff;border:none;box-shadow:var(--shadow);font-size:18px;opacity:0;pointer-events:none;transition:opacity .2s}
+.up.on{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top"><span class="mark">🌿</span><span>Longrich<small>Каталог 2026</small></span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#cats">Разделы</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#how">Как заказать</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">Здоровье · Красота · Качество</span>
+      <h1>Каталог продукции Longrich с новинками 2026</h1>
+      <p>Весь ассортимент в одном месте: без PDF и скачиваний. Открывается с телефона, ищется по названию, с полными описаниями, составом и ценами.</p>
+      <div class="row">
+        <a class="btn btn-p" href="#catalog">Смотреть каталог</a>
+        <a class="btn btn-g" href="#cats">Разделы</a>
+      </div>
+      <div class="stats">
+        <div><b class="num" id="s1">—</b><span>позиций</span></div>
+        <div><b class="num" id="s2">—</b><span>разделов</span></div>
+        <div><b class="num" id="s3">—</b><span>новинки 2026</span></div>
+      </div>
+    </div>
+    <div class="hero-pic"><img src="img/hero.jpg" alt="Продукция Longrich"></div>
+  </div>
+</div>
+
+<section class="sec sec-paper">
+  <div class="wrap">
+    <div class="head"><div class="kick">О продукции</div><h2>Что входит в линейку</h2><p>Longrich — это не только добавки. В каталоге девять направлений: от ежедневных витаминов до посуды и бытовой химии.</p></div>
+    <div class="feats">
+      <div class="feat"><div class="i">🌿</div><h3>Натуральная основа</h3><p>Облепиха, кордицепс, соевый зародыш, натто, боярышник, гранат — в основе формул растительные компоненты.</p></div>
+      <div class="feat"><div class="i">📦</div><h3>Удобные форматы</h3><p>Капсулы, саше, жевательные таблетки, дой-паки, чайные пакетики — то, что легко взять с собой.</p></div>
+      <div class="feat"><div class="i">👪</div><h3>Для всей семьи</h3><p>Отдельные линейки для детей, женского здоровья, ухода за кожей и ежедневной гигиены.</p></div>
+      <div class="feat"><div class="i">💳</div><h3>Две цены</h3><p>Основная цена и цена повторной покупки для партнёров — обе указаны в карточке товара.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cats">
+  <div class="wrap">
+    <div class="head"><div class="kick">Разделы</div><h2>Выберите направление</h2><p>Нажмите на раздел — каталог ниже отфильтруется.</p></div>
+    <div class="cats" id="catgrid"></div>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="catalog">
+  <div class="wrap">
+    <div class="head"><div class="kick">Весь ассортимент</div><h2>Каталог</h2><p>Нажмите на карточку — откроется полное описание: состав, польза, способ применения и предупреждения.</p></div>
+    <div class="tools">
+      <div class="srch"><span>🔍</span><input type="search" id="q" placeholder="Поиск: «суставы», «иммунитет», «чай»…" autocomplete="off"></div>
+      <div class="cnt" id="cnt"></div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div id="body"></div>
+    <div class="note"><b>Важно.</b> Продукция не является лекарственным средством и не заменяет назначения врача. Описания приведены по официальному каталогу производителя. Перед применением биологически активных добавок проконсультируйтесь со специалистом.</div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="head"><div class="kick">Оформление</div><h2>Как заказать</h2><p>Четыре шага — от выбора товара до получения.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Выберите товар</h3><p>Найдите нужное через поиск или фильтр по разделам.</p></div>
+      <div class="step"><h3>Откройте карточку</h3><p>Внутри — состав, польза, способ применения и обе цены.</p></div>
+      <div class="step"><h3>Напишите нам</h3><p>Отправьте название в WhatsApp — подтвердим наличие и цену.</p></div>
+      <div class="step"><h3>Получите заказ</h3><p>Доставка по городу или отправка в регионы.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-paper" id="contacts">
+  <div class="wrap">
+    <div class="band">
+      <h2>Остались вопросы по продукту?</h2>
+      <p>Подскажем, что подойдёт под вашу задачу, расскажем про схему приёма и условия партнёрской цены.</p>
+      <div class="row" style="justify-content:center">
+        <a class="btn btn-p wa" href="#">Написать в WhatsApp</a>
+        <a class="btn btn-g" href="#catalog">Открыть каталог</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fb"><span class="mark">🌿</span> Longrich</div>
+        <p>Онлайн-версия каталога продукции с новинками 2026 года. Описания, состав и цены приведены по материалам производителя.</p>
+      </div>
+      <div><h4>Каталог</h4><nav id="fcats"></nav></div>
+      <div><h4>Связаться</h4>
+        <a class="wa" href="#">WhatsApp</a>
+        <a href="https://t.me/username">Telegram</a>
+        <a class="tel" href="#">+7 700 000 00 00</a>
+      </div>
+    </div>
+    <div class="fbot"><span>© <span id="yr"></span> Каталог продукции Longrich</span><span>Не является лекарственным средством</span></div>
+  </div>
+</footer>
+
+<button class="up" id="up" aria-label="Наверх">↑</button>
+<div class="mbg" id="mbg" hidden><div class="modal" role="dialog" aria-modal="true" aria-label="Карточка товара"><button class="mx" id="mx" aria-label="Закрыть">✕</button><div class="mgrid" id="mc"></div></div></div>
+
+<script src="data.js"></script>
+<script>
+const PHONE='77000000000';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const money=n=>n.toLocaleString('ru-RU').replace(/ /g,' ')+' ₸';
+const plural=(n,a,b,c)=>{const x=n%10,y=n%100;return x===1&&y!==11?a:x>=2&&x<=4&&(y<10||y>=20)?b:c};
+const byId=id=>CATEGORIES.find(c=>c.id===id);
+
+if(typeof PRODUCTS==='undefined'){
+  document.getElementById('body').innerHTML='<div class="none"><b>Каталог не загрузился</b>Файл data.js недоступен. Обновите страницу.</div>';
+}else{ start(); }
+
+function start(){
+  $('#yr').textContent=new Date().getFullYear();
+  $('#s1').textContent=PRODUCTS.length;
+  $('#s2').textContent=CATEGORIES.length;
+  $('#s3').textContent=PRODUCTS.filter(p=>p.isNew).length;
+  document.querySelectorAll('a.wa').forEach(a=>a.href='https://wa.me/'+PHONE);
+  document.querySelectorAll('a.tel').forEach(a=>a.href='tel:+'+PHONE);
+
+  const menu=$('#menu'),burger=$('#burger');
+  const narrow=()=>matchMedia('(max-width:880px)').matches;
+  const sync=()=>{menu.hidden=narrow()&&burger.getAttribute('aria-expanded')!=='true'};
+  burger.addEventListener('click',()=>{const o=burger.getAttribute('aria-expanded')==='true';burger.setAttribute('aria-expanded',String(!o));sync()});
+  menu.addEventListener('click',e=>{if(e.target.tagName==='A'){burger.setAttribute('aria-expanded','false');sync()}});
+  addEventListener('resize',sync); sync();
+
+  const up=$('#up');
+  up.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+  addEventListener('scroll',()=>up.classList.toggle('on',scrollY>700),{passive:true});
+
+  $('#fcats').innerHTML=CATEGORIES.map(c=>`<a href="#catalog" data-c="${c.id}">${c.title}</a>`).join('');
+  $('#fcats').addEventListener('click',e=>{const a=e.target.closest('[data-c]');if(a)pick(a.dataset.c)});
+
+  $('#catgrid').innerHTML=CATEGORIES.map(c=>{
+    const n=PRODUCTS.filter(p=>p.cat===c.id).length;
+    return `<button class="cat" data-c="${c.id}"><div class="i">${c.icon}</div><h3>${esc(c.title)}</h3><p>${esc(c.desc)}</p><div class="n">${n} ${plural(n,'товар','товара','товаров')} →</div></button>`;
+  }).join('');
+  $('#catgrid').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(b)pick(b.dataset.c)});
+
+  $('#chips').innerHTML=[{id:'all',icon:'🗂',title:'Все товары'},...CATEGORIES]
+    .map(c=>`<button class="chip" data-c="${c.id}" aria-pressed="false">${c.icon} ${esc(c.title)}</button>`).join('');
+  $('#chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(b)pick(b.dataset.c,false)});
+  $('#q').addEventListener('input',render);
+
+  $('#mx').addEventListener('click',close);
+  $('#mbg').addEventListener('click',e=>{if(e.target===$('#mbg'))close()});
+  addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+  $('#body').addEventListener('click',e=>{const c=e.target.closest('.card');if(c)open(c.dataset.id)});
+
+  render();
+}
+
+let active='all';
+function pick(id,scroll=true){
+  active=id; render();
+  if(scroll)$('#catalog').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function card(p){
+  const mark=p.isNew?'<span class="tagmark">Новинка</span>':(p.badge?`<span class="tagmark g">${esc(p.badge)}</span>`:'');
+  const pr=p.price
+    ? `<span class="p1 num">${money(p.price)}</span>${p.repeat?`<span class="p2 num">${esc(p.repeatLabel||'Повторно')}: ${money(p.repeat)}</span>`:''}`
+    : '<span class="p0">Цена по запросу</span>';
+  return `<button class="card" data-id="${p.id}">
+    <div class="pic">${mark}<img src="img/${p.img}" alt="${esc(p.name)}" loading="lazy"></div>
+    <div class="cbody"><h4>${esc(p.name)}</h4>${p.size?`<div class="sz">${esc(p.size)}</div>`:''}
+    <div class="pr">${pr}</div><div class="more">Подробнее →</div></div></button>`;
+}
+function fit(root){
+  root.querySelectorAll('.pic img').forEach(i=>{
+    const go=()=>{const r=i.naturalWidth/i.naturalHeight;if(r<0.82||r>1.45)i.classList.add('fit')};
+    i.complete&&i.naturalWidth?go():i.addEventListener('load',go,{once:true});
+  });
+}
+function render(){
+  const q=$('#q').value.trim().toLowerCase();
+  document.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',String(c.dataset.c===active)));
+  const hit=p=>{
+    if(!q)return true;
+    const h=[p.name,p.size,p.short,p.more,p.usage,(p.benefits||[]).join(' '),(p.composition||[]).join(' ')].filter(Boolean).join(' ').toLowerCase();
+    return q.split(/\s+/).every(w=>h.includes(w));
+  };
+  const list=PRODUCTS.filter(p=>(active==='all'||p.cat===active)&&hit(p));
+  $('#cnt').textContent=`${list.length} ${plural(list.length,'товар','товара','товаров')}`;
+  const b=$('#body');
+  if(!list.length){b.innerHTML='<div class="none"><b>Ничего не нашлось</b>Попробуйте другое слово или выберите «Все товары».</div>';return}
+  b.innerHTML = active==='all'
+    ? CATEGORIES.map(c=>{const it=list.filter(p=>p.cat===c.id);return it.length?`<div class="grp"><h3>${c.icon} ${esc(c.title)}</h3><span>${it.length} ${plural(it.length,'товар','товара','товаров')}</span></div><div class="grid">${it.map(card).join('')}</div>`:''}).join('')
+    : (()=>{const c=byId(active);return `<div class="grp"><h3>${c.icon} ${esc(c.title)}</h3><span>${esc(c.desc)}</span></div><div class="grid">${list.map(card).join('')}</div>`})();
+  fit(b);
+}
+
+let back=null;
+function open(id){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p)return;
+  back=document.activeElement;
+  const c=byId(p.cat);
+  const tags=[c?`${c.icon} ${c.title}`:null,p.isNew?'✨ Новинка 2026':null].filter(Boolean).map(t=>`<span class="tg">${esc(t)}</span>`).join('');
+  let pr;
+  if(p.price){
+    const a=[`<span class="p1 num">${money(p.price)}</span>`];
+    if(p.repeat)a.push(`<span class="p2 num">${esc(p.repeatLabel||'Повторная покупка')}: ${money(p.repeat)}</span>`);
+    if(p.usd)a.push(`<span class="p2 num" style="color:var(--ink-2)">≈ $${p.usd.toFixed(2)}</span>`);
+    if(p.priceNote)a.push(`<span class="p2">${esc(p.priceNote)}</span>`);
+    pr=`<div class="mpr">${a.join('')}</div>`;
+  }else pr='<div class="mpr"><span class="p0">Цена по запросу — уточните в WhatsApp</span></div>';
+  const msg=encodeURIComponent('Здравствуйте! Интересует товар из каталога: '+p.name);
+  $('#mc').innerHTML=`<div class="mpic"><img src="img/${p.img}" alt="${esc(p.name)}"></div>
+  <div class="mbody"><div class="tags">${tags}</div><h2>${esc(p.name)}</h2>
+  ${p.size?`<div class="msz">${esc(p.size)}</div>`:''}${pr}
+  <p class="lead">${esc(p.short)}</p>
+  ${p.benefits?.length?`<h5>Основные свойства</h5><ul>${p.benefits.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+  ${p.composition?`<h5>Состав</h5><ul>${p.composition.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+  ${p.usage?`<h5>Способ применения</h5><p>${esc(p.usage)}</p>`:''}
+  ${p.more?`<h5>Дополнительно</h5><p>${esc(p.more)}</p>`:''}
+  ${p.warning?`<div class="warn"><b>Предупреждение.</b> ${esc(p.warning)}</div>`:''}
+  <div class="row" style="margin-top:22px"><a class="btn btn-p" href="https://wa.me/${PHONE}?text=${msg}" target="_blank" rel="noopener">Спросить про товар</a></div>
+  <div class="warn calm">Не является лекарственным средством. Перед применением проконсультируйтесь со специалистом.</div></div>`;
+  $('#mbg').hidden=false; $('#mbg').scrollTop=0;
+  document.body.style.overflow='hidden'; $('#mx').focus();
+}
+function close(){
+  if($('#mbg').hidden)return;
+  $('#mbg').hidden=true; document.body.style.overflow='';
+  back?.focus();
+}
+</script>

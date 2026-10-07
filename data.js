@@ -81,7 +81,7 @@ const PRODUCTS = [
     id: 'coffee-cordyceps', cat: 'health', img: 'coffee-cordyceps.jpg',
     name: 'Кофе Longrich с кордицепсом (Cordyceps Militaris Coffee)',
     size: '10 саше × 18 г',
-    price: 11500, repeat: 4600, priceNote: 'Зона квалификации',
+    price: 11500, repeat: 4600,
     short: 'Растворимый кофе с экстрактом гриба Cordyceps Militaris: мягкий вкус плюс поддержка энергии и тонуса.',
     benefits: [
       'Помогает поддерживать бодрость и жизненный тонус',
@@ -132,7 +132,7 @@ const PRODUCTS = [
     id: 'cordyceps-caps', cat: 'health', img: 'cordyceps-caps.jpg',
     name: 'Baohetang Капсулы с Cordyceps militaris',
     size: '60 капсул',
-    price: 45000, repeat: 18000, usd: 88.40, priceNote: 'Зона квалификации',
+    price: 45000, repeat: 18000, usd: 88.40,
     short: 'Пищевая добавка на основе гриба Cordyceps Militaris — общеукрепляющая и тонизирующая.',
     benefits: [
       'Способствует укреплению иммунитета',
@@ -182,7 +182,7 @@ const PRODUCTS = [
     id: 'vitamin-c', cat: 'health', img: 'vitamin-c.jpg',
     name: 'Жевательные таблетки с витамином C, апельсиновый вкус',
     size: '60 таблеток, 72 г (1,2 г × 60)',
-    price: 8000, repeat: 4000, repeatLabel: 'Со скидкой', usd: 15.72,
+    price: 8000, repeat: 4000, usd: 15.72,
     short: 'Ежедневная поддержка иммунитета в удобной жевательной форме с приятным апельсиновым вкусом.',
     benefits: [
       'Поддержка иммунной системы',
@@ -198,7 +198,7 @@ const PRODUCTS = [
     id: 'nmn-q10', cat: 'health', img: 'nmn-q10.jpg',
     name: 'NMN (β-Никотинамидмононуклеотид) + Коэнзим Q10',
     size: 'комплекс для клеточной энергии',
-    price: 50000, repeat: 20000, priceNote: 'Зона квалификации',
+    price: 50000, repeat: 20000,
     short: 'NMN — предшественник кофермента NAD+, Q10 — мощный антиоксидант. Вместе поддерживают энергетический обмен клеток.',
     benefits: [
       'Поддержка клеточного энергетического обмена',
@@ -263,7 +263,7 @@ const PRODUCTS = [
     id: 'lipase', cat: 'health', img: 'lipase.jpg',
     name: 'Таблетированные конфеты с липазным комплексом',
     size: 'таблетки',
-    price: 85000, repeat: 34000, repeatLabel: 'Со скидкой', usd: 166.99,
+    price: 85000, repeat: 34000, usd: 166.99,
     short: 'Фермент липаза помогает расщеплять жиры из пищи и поддерживает комфортное пищеварение.',
     benefits: [
       'Способствует улучшению переваривания жирной пищи',
@@ -364,7 +364,7 @@ const PRODUCTS = [
     id: 'pot', cat: 'home', img: 'pot.jpg',
     name: 'Кастрюля Longrich «Хэхэ Каннэн», суповая 28 см',
     size: 'пищевая нержавеющая сталь, многослойное дно',
-    price: 250000, repeat: 150000, priceNote: 'Зона квалификации',
+    price: 250000, repeat: 150000,
     short: 'Энергетическая кастрюля премиального уровня: сохраняет до 85% питательной ценности продуктов после приготовления.',
     benefits: [
       'Сохраняет до 85% питательной ценности продуктов',
@@ -413,7 +413,7 @@ const PRODUCTS = [
     id: 'peptide-spray', cat: 'face', img: 'peptide-spray.jpg',
     name: 'Увлажняющий пептидный спрей-эссенция Yacan',
     size: '80 мл',
-    price: 16000, repeat: 8000, repeatLabel: 'Со скидкой', usd: 31.43,
+    price: 16000, repeat: 8000, usd: 31.43,
     short: 'Пептидная эссенция-спрей для интенсивного увлажнения и освежения кожи лица в течение дня.',
     benefits: [
       'Интенсивное увлажнение кожи',
@@ -429,7 +429,7 @@ const PRODUCTS = [
     id: 'pomegranate-set', cat: 'face', img: 'pomegranate-set.jpg',
     name: 'Премиальный уходовый набор с экстрактом граната EVERGREEN',
     size: '5 средств: очищение, тонер, эссенция, дневной и ночной крем',
-    price: 150000, repeat: 75000, repeatLabel: 'Со скидкой', usd: 294.70,
+    price: 150000, repeat: 75000, usd: 294.70,
     badge: 'Набор',
     short: 'Полный ритуал ежедневного ухода с антиоксидантными свойствами граната.',
     benefits: [
@@ -462,7 +462,7 @@ const PRODUCTS = [
     id: 'snake-essence', cat: 'face', img: 'snake-essence.jpg',
     name: 'Уходовая эссенция Longrich со змеиным жиром №1',
     size: '120 мл',
-    price: 4000, repeat: 2000, repeatLabel: 'Скидка 50%', usd: 7.86,
+    price: 4000, repeat: 2000, usd: 7.86,
     short: 'Многофункциональный защитный лосьон на основе змеиного масла для интенсивного ухода за кожей лица и тела.',
     benefits: [
       'Увлажняет, питает и восстанавливает сухую и тусклую кожу',
@@ -479,7 +479,7 @@ const PRODUCTS = [
     id: 'horse-cream', cat: 'body', img: 'horse-cream.jpg',
     name: 'Крем с конским жиром Madelan',
     size: '500 г',
-    price: 10000, repeat: 5000, repeatLabel: 'Со скидкой', usd: 19.65,
+    price: 10000, repeat: 5000, usd: 19.65,
     short: 'Лошадиный жир по структуре близок к липидам кожи человека — крем хорошо впитывается и поддерживает гидролипидный баланс.',
     benefits: [
       'Глубокое увлажнение и питание кожи',
@@ -525,7 +525,7 @@ const PRODUCTS = [
     id: 'shampoo', cat: 'body', img: 'shampoo.jpg',
     name: 'Шампунь Longrich 2-в-1 «Очищение и уход»',
     size: '300 мл, с экстрактом мяты перечной',
-    price: 6000, repeat: 3000, repeatLabel: 'Скидка', usd: 11.79,
+    price: 6000, repeat: 3000, usd: 11.79,
     short: 'Бережный уход за волосами: ощущение свежести и мягкости, помогает устранять перхоть.',
     benefits: [
       'Очищение и уход в одном средстве',
@@ -603,7 +603,7 @@ const PRODUCTS = [
     id: 'brush-n105', cat: 'oral', img: 'brush-n105.jpg',
     name: 'Зубная щётка Longrich глубокого очищения N105',
     size: 'щётка для взрослых',
-    price: 1000, repeat: 500, repeatLabel: 'Со скидкой', usd: 1.96,
+    price: 1000, repeat: 500, usd: 1.96,
     short: 'Закруглённая головка проникает глубоко и очищает даже задние моляры.',
     benefits: [
       'Многоугольная чистка, достаёт до задних моляров',
@@ -680,7 +680,7 @@ const PRODUCTS = [
     id: 'fem-wash', cat: 'women', img: 'fem-wash.jpg',
     name: 'Средство для интимной гигиены «Longrich Двойная свежесть»',
     size: '248 мл',
-    price: 8000, repeat: 4000, repeatLabel: 'Со скидкой', usd: 15.72,
+    price: 8000, repeat: 4000, usd: 15.72,
     short: 'Деликатное средство для ежедневной женской гигиены: чистота, свежесть и комфорт.',
     benefits: [
       'Мягкое и деликатное очищение',
@@ -743,7 +743,7 @@ const PRODUCTS = [
     id: 'dishwash', cat: 'house', img: 'dishwash.jpg',
     name: 'Средство для мытья посуды «Морская серия»',
     size: '1 флакон',
-    price: 7000, repeat: 4200, repeatLabel: 'Скидка', usd: 13.75,
+    price: 7000, repeat: 4200, usd: 13.75,
     short: 'Средство для мытья посуды из серии «Морская».',
     benefits: ['Эффективно удаляет жир', 'Легко смывается', 'Экономичный расход'],
     usage: 'Использовать согласно инструкции на упаковке.',

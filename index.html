@@ -74,7 +74,10 @@ h1,h2,h3,h4{margin:0;line-height:1.25;text-wrap:balance}
 .good h3{font-size:23px;font-weight:700;margin-bottom:6px;letter-spacing:-.01em}
 .fm{color:var(--ink-3);font-size:17px;margin-bottom:14px}
 .pz{background:var(--green-l);border-radius:9px;padding:13px 16px;margin-bottom:16px}
+.pz .lb{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:700}
 .pz b{display:block;font-size:27px;color:var(--green-d);line-height:1.2;font-variant-numeric:tabular-nums}
+.pz .pp{display:block;margin-top:9px;padding-top:9px;border-top:1px solid #c8e0d4;font-size:16px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.pz .pp b{display:inline;font-size:19px;color:var(--ink);margin-left:6px}
 .pz span{display:block;font-size:16px;color:var(--ink-2);margin-top:3px;font-variant-numeric:tabular-nums}
 .pz.ask b{font-size:20px}
 .good p{margin:0 0 13px;color:var(--ink-2)}
@@ -188,10 +191,9 @@ function good(p,n){
   const tag=p.isNew?'<span class="no new">№ '+n+' · новинка</span>':`<span class="no">№ ${n}</span>`;
   let price;
   if(p.price){
-    const extra=[];
-    if(p.repeat)extra.push(`${esc(p.repeatLabel||'Повторная покупка')}: ${money(p.repeat)}`);
-    if(p.priceNote)extra.push(esc(p.priceNote));
-    price=`<div class="pz"><b>${money(p.price)}</b>${extra.length?`<span>${extra.join(' · ')}</span>`:''}</div>`;
+    price=`<div class="pz"><span class="lb">Клиентская цена</span><b>${money(p.price)}</b>`
+        + (p.repeat?`<span class="pp">Партнёрская цена:<b>${money(p.repeat)}</b></span>`:'')
+        + `</div>`;
   }else{
     price='<div class="pz ask"><b>Цена по запросу</b><span>Спросите у нас — подскажем</span></div>';
   }

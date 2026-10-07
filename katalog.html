@@ -224,7 +224,7 @@ h1,h2,h3{margin:0;line-height:1.18;letter-spacing:-.022em;font-weight:800;text-w
       <div class="feat"><div class="i">🌿</div><h3>Натуральная основа</h3><p>Облепиха, кордицепс, соевый зародыш, натто, боярышник, гранат — в основе формул растительные компоненты.</p></div>
       <div class="feat"><div class="i">📦</div><h3>Удобные форматы</h3><p>Капсулы, саше, жевательные таблетки, дой-паки, чайные пакетики — то, что легко взять с собой.</p></div>
       <div class="feat"><div class="i">👪</div><h3>Для всей семьи</h3><p>Отдельные линейки для детей, женского здоровья, ухода за кожей и ежедневной гигиены.</p></div>
-      <div class="feat"><div class="i">💳</div><h3>Две цены</h3><p>Основная цена и цена повторной покупки для партнёров — обе указаны в карточке товара.</p></div>
+      <div class="feat"><div class="i">💳</div><h3>Две цены</h3><p>Клиентская цена и партнёрская — обе указаны в карточке каждого товара.</p></div>
     </div>
   </div>
 </section>
@@ -357,7 +357,7 @@ function pick(id,scroll=true){
 function card(p){
   const mark=p.isNew?'<span class="tagmark">Новинка</span>':(p.badge?`<span class="tagmark g">${esc(p.badge)}</span>`:'');
   const pr=p.price
-    ? `<span class="p1 num">${money(p.price)}</span>${p.repeat?`<span class="p2 num">${esc(p.repeatLabel||'Повторно')}: ${money(p.repeat)}</span>`:''}`
+    ? `<span class="p1 num">${money(p.price)}</span>${p.repeat?`<span class="p2 num">Партнёрская: ${money(p.repeat)}</span>`:''}`
     : '<span class="p0">Цена по запросу</span>';
   return `<button class="card" data-id="${p.id}">
     <div class="pic">${mark}<img src="img/${p.img}" alt="${esc(p.name)}" loading="lazy"></div>
@@ -396,10 +396,10 @@ function open(id){
   const tags=[c?`${c.icon} ${c.title}`:null,p.isNew?'✨ Новинка 2026':null].filter(Boolean).map(t=>`<span class="tg">${esc(t)}</span>`).join('');
   let pr;
   if(p.price){
-    const a=[`<span class="p1 num">${money(p.price)}</span>`];
-    if(p.repeat)a.push(`<span class="p2 num">${esc(p.repeatLabel||'Повторная покупка')}: ${money(p.repeat)}</span>`);
+    const a=[`<span class="p2" style="flex-basis:100%;color:var(--ink-2)">Клиентская цена</span>`,
+             `<span class="p1 num">${money(p.price)}</span>`];
+    if(p.repeat)a.push(`<span class="p2 num">Партнёрская цена: ${money(p.repeat)}</span>`);
     if(p.usd)a.push(`<span class="p2 num" style="color:var(--ink-2)">≈ $${p.usd.toFixed(2)}</span>`);
-    if(p.priceNote)a.push(`<span class="p2">${esc(p.priceNote)}</span>`);
     pr=`<div class="mpr">${a.join('')}</div>`;
   }else pr='<div class="mpr"><span class="p0">Цена по запросу — уточните в WhatsApp</span></div>';
   const msg=encodeURIComponent('Здравствуйте! Интересует товар из каталога: '+p.name);
